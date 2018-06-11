@@ -1,0 +1,68 @@
+package odd.and.even;
+
+import java.util.Scanner;
+
+public class OddAndEven {
+
+    public static void main(String[] args) {
+        Scanner entry= new Scanner(System.in);
+        int number = 0,i = 0;
+        int evencounter = 0, oddcounter=0;
+        
+        while (i==0){
+        System.out.println("*Ingrese un número*");
+        number=entry.nextInt();
+            
+            if(number==0){
+                i++;
+                System.out.println(evencounter+" números fueron pares");
+                System.out.println(oddcounter+" números fueron impares");
+                System.out.println("-Fin del programa-");
+                break;
+            }
+        
+            if (number%2==0){
+                System.out.println("El número "+number+" es par");
+                evencounter++;
+            }
+            else {
+                System.out.println("El número "+number+" es impar");
+                oddcounter++;
+            }
+        }    
+    }   
+}
+******************************************************************
+package palindrome;
+
+import java.util.Scanner;
+
+public class Palindrome {
+
+    public static void main(String[] args) {
+        Scanner entry= new Scanner(System.in);
+        String word;
+        
+        System.out.println("*Ingrese una palabra*");
+        word=entry.nextLine();
+        
+        if (palindromo(word))
+            System.out.println("La palabra -"+word+"- es Palindroma.");
+           
+        else
+            System.out.println("La palabra -"+word+"- NO es Palindroma.");          
+    }
+    static boolean palindromo(String word)
+    {
+
+        String modificado = word.replaceAll(" ","").toLowerCase();
+        int i=0;
+        while (i < modificado.length() / 2)
+        {
+            if (modificado.charAt(i) != modificado.charAt(modificado.length() -1 -i))
+                return false;
+            i++;
+        }
+        return true;
+    }
+}
