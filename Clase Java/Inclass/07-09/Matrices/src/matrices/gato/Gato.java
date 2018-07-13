@@ -38,7 +38,7 @@ public class Gato {
                 }
                 
                 System.out.print(matriz[i][j]+"  ");
-            } 
+            }
             System.out.println("");
         }
         System.out.println("" + (esDiagonal?"Ganaste":"Perdiste"));
