@@ -8,7 +8,7 @@ public class Arreglos {
         
         int[] arreglo=new int [5];
         int[] arreglo2=new int [5];
-        //arreglo[0]=25;
+        arreglo[0]=25;
         
         System.out.println("Primer arreglo");
         for(int i=0;i<arreglo.length;i++){

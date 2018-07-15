@@ -16,7 +16,7 @@ public class Matrices {
             {4,1,6},
             {7,8,1},
         };
-    
+        
         */
         
         //Una matriz es una arreglo dentro de otro arreglo.
@@ -28,7 +28,6 @@ public class Matrices {
             for(int j=0;j<matriz[i].length;j++){   // j son columnas
                 matriz[i][j]=contador++; // este contador llena las posiciones de los arrays
                 System.out.print(matriz[i][j]+"  ");
-            
             } 
             System.out.println("");
         }
